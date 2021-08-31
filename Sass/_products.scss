@@ -1,0 +1,48 @@
+.products {
+  padding: 40px 95px;
+  &-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    &-box {
+      text-align: center;
+      padding: 3rem;
+      border: $boder;
+    }
+    &-icons {
+      a {
+        padding: 1.5rem;
+        font-size: 2rem;
+        border: $boder;
+        color: $whiteColor;
+      }
+    }
+    &-image {
+      margin: 20px auto;
+      img {
+        margin: auto;
+        height: 25rem;
+        text-align: center;
+      }
+    }
+    &-content {
+      text-align: center;
+      h3 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        color: $whiteColor;
+        text-transform: capitalize;
+      }
+      div {
+        margin: 5px auto;
+        i {
+          font-size: 1.8rem;
+          color: $textColor;
+        }
+      }
+    }
+  }
+  @include maxWidth(991px) {
+    padding: 15px 20px;
+  }
+}

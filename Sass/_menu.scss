@@ -1,0 +1,54 @@
+.menu {
+  padding: 50px 95px;
+  &-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    &-box {
+      text-align: center;
+      padding: 4rem;
+      border: $boder;
+      img {
+        margin: auto;
+        height: 10rem;
+        object-fit: cover;
+      }
+      h3 {
+        font-size: 2rem;
+        line-height: 5rem;
+        color: $whiteColor;
+        text-transform: capitalize;
+      }
+      div {
+        font-size: 2.2rem;
+        color: $whiteColor;
+        line-height: 5rem;
+        span {
+          color: $grayColor;
+          font-size: 1.2rem;
+          text-decoration: line-through;
+        }
+      }
+      a {
+        text-transform: capitalize;
+        font-size: 1.6rem;
+      }
+    }
+    :hover {
+      background: $whiteColor;
+      h3 {
+        color: $blackColor;
+      }
+      div {
+        color: $blackColor;
+      }
+      a {
+        background: $textColor;
+        color: $blackColor;
+      }
+    }
+  }
+  @include maxWidth(991px) {
+    padding: 15px 20px;
+  }
+}

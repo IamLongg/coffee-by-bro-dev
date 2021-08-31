@@ -1,0 +1,54 @@
+.home {
+  min-height: 100vh;
+  background: url(../images/home-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  &-content {
+    max-width: 80rem;
+    padding: 0 95px;
+    h3 {
+      font-size: 6rem;
+      line-height: 7rem;
+      color: $whiteColor;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+    p {
+      font-size: 2rem;
+      color: $whiteColor;
+      line-height: 2.5rem;
+      font-weight: lighter;
+      margin: 20px 0;
+    }
+    a {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+  @include maxWidth(991px) {
+    &-content {
+      padding: 0 25px;
+    }
+  }
+  @include maxWidth(768px) {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @include maxWidth(450px) {
+    &-content {
+      h3 {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+      p {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+}

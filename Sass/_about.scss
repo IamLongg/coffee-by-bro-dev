@@ -1,0 +1,39 @@
+.about {
+  padding: 50px 95px;
+  &-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: $blackColor;
+    &-image {
+      flex: 1 1 45rem;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &-content {
+      flex: 1 1 45rem;
+      padding: 2rem;
+      h3 {
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+        font-weight: 500;
+        color: $whiteColor;
+        text-transform: capitalize;
+      }
+      p {
+        color: $grayColor;
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        margin: 1.2rem 0;
+      }
+      a {
+        text-transform: capitalize;
+      }
+    }
+  }
+  @include maxWidth(991px) {
+    padding: 15px 20px;
+  }
+}

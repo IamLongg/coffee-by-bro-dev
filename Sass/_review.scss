@@ -1,0 +1,39 @@
+.review {
+  padding: 40px 95px;
+  &-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    &-box {
+      text-align: center;
+      border: $boder;
+      padding: 3rem 2rem;
+      img {
+        margin: auto;
+      }
+      .user {
+        border-radius: 50%;
+      }
+      p {
+        color: $grayColor;
+        font-size: 1.5rem;
+        padding: 2rem 0;
+      }
+      h3 {
+        font-size: 2rem;
+        padding: 1rem 0;
+        color: $whiteColor;
+        text-transform: capitalize;
+      }
+      div {
+        i {
+          font-size: 1.2rem;
+          color: $textColor;
+        }
+      }
+    }
+  }
+  @include maxWidth(991px) {
+    padding: 15px 20px;
+  }
+}

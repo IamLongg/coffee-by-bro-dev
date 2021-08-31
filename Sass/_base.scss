@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: $whiteColor;
+  border-radius: 5rem;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $bgblack;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  color: $whiteColor;
+  background: $textColor;
+  border-radius: 30px;
+  font-size: 1.6rem;
+  transition: 0.25s;
+  text-transform: capitalize;
+  cursor: pointer;
+  &:hover {
+    letter-spacing: 2px;
+  }
+}
+
+.heading {
+  font-size: 3rem;
+  color: $whiteColor;
+  text-align: center;
+  padding-bottom: 2.5rem;
+  text-transform: uppercase;
+  span {
+    margin: 0 10px;
+    color: $textColor;
+  }
+}

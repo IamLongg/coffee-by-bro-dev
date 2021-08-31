@@ -1,0 +1,41 @@
+.footer {
+  background-color: $blackColor;
+  text-align: center;
+  &-share {
+    padding: 2rem 0;
+    a {
+      width: 5rem;
+      height: 5rem;
+      line-height: 5rem;
+      color: $whiteColor;
+      border: $boder;
+      font-size: 2rem;
+      border-radius: 50%;
+      margin: 0 1rem;
+      &:hover {
+        transition: 0.25s;
+        background-color: $textColor;
+      }
+    }
+  }
+  &-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    a {
+      display: inline-block;
+      padding: 10px 15px;
+      color: $whiteColor;
+      border: $boder;
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      margin: 0.5rem;
+      &:hover {
+        transition: 0.25s;
+        background-color: $textColor;
+      }
+    }
+  }
+}
